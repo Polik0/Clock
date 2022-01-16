@@ -1,0 +1,121 @@
+.box {
+    background: url(img/cute.jpg);
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    border: 10px solid rgb(51, 31, 21);
+    border-radius: 50%;
+}
+
+.twelve, .three, .six, .nine {
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(124, 82, 59);
+}
+
+.twelve {
+    top: 15px;
+    left: 330px;
+}
+
+.three {
+    top: 310px;
+    left: 655px;
+}
+
+.six {
+    top: 310px;
+    left: 15px;
+}
+
+.nine {
+    top: 640px;
+    left: 345px;
+}
+
+.centre {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 335px;
+    left: 340px;
+    background: rgb(48, 28, 14);
+}
+
+.arrow {
+    background: rgb(82, 46, 27);
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 5px);
+
+    animation: move;
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.arrow-small {
+    background: rgb(124, 82, 59);
+    width: 6px;
+    height: 250px;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 3px);
+
+    animation: move-small;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.arrow-seconds {
+    background: rgb(51, 31, 21);
+    width: 6px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 5px);
+
+    animation: move-seconds;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0);
+        transform-origin: 50% 100%;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes move-small {
+    0% {
+        transform: rotate(0);
+        transform-origin: 50% 100%;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes move-seconds {
+    0% {
+        transform: rotate(0);
+        transform-origin: 50% 100%;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: 50% 100%;
+    }
+}
